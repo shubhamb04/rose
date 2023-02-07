@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Add some styling to the page */
+      body {
+        background-color: lightpink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 24px;
+        margin-bottom: 40px;
+      }
+
+      #openBtn {
+        background-color: hotpink;
+        color: white;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 50px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      #roseContainer {
+        display: none;
+        text-align: center;
+      }
+
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello Sweetheart, I hope you are having a great day!</h1>
+    <p>If not, this will make your day 😘</p>
+    <button id="openBtn">Open</button>
+    <br /><br />
+    <div id="roseContainer">
+      <img src="/pexels-pixabay-53141.jpg" alt="Rose" />
+      <p>Happy Rose Day</p>
+    </div>
+
+    <script>
+      document.getElementById('openBtn').addEventListener('click', function () {
+        document.getElementById('roseContainer').style.display = 'block';
+      });
+    </script>
+  </body>
+</html>
